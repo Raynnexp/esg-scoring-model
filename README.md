@@ -4,33 +4,35 @@ Quantitative ESG scoring model for corporate performance analysis
 # Corporate ESG Scoring Model
 
 ## :pushpin: Objetivo do Projeto
-Este projeto desenvolve um modelo quantitativo para avaliar e ranquear empresas com base em critérios ESG (Environmental, Social, and Governance). O objetivo é transformar dados brutos de sustentabilidade em um score comparativo (0-100) para apoiar decisões de investimento e análise de risco.
+This project develops a quantitative model to evaluate and rank companies based on ESG (Environmental, Social, and Governance) criteria. The goal is to transform raw sustainability data into a comparative score (0-100) to support investment decisions and risk analysis.
 
 ## :hammer_and_wrench: Tecnologias e Ferramentas
-- **Lógica de Dados:** SQL (Analytics Engineering approach)
-- **Domínio:** ESG & FinOps
-- **Metodologia:** Média Ponderada com Normalização de Variáveis
+- **Data Logic:** SQL (Analytics Engineering approach)
+- **Domain:** ESG & FinOps
+- **Methodology:** Weighted Average with Variable Normalization
 
 ## :bar_chart: Metodologia de Cálculo
-Para garantir uma comparação justa entre empresas de diferentes setores, o modelo aplica os seguintes pesos:
-- **Environmental (40%):** Focado em emissões de CO2 (escala invertida).
-- **Social (30%):** Baseado no índice de diversidade interna.
-- **Governance (30%):** Avaliação de independência do conselho administrativo.
+To ensure a fair comparison across different industries, the model applies the following weights:
+- **Environmental (40%):** Focused on $CO_2$ emissions (inverse scale).
+- **Social (30%):** Based on internal diversity indices.
+- **Governance (30%):** Assessment of board independence.
 
 ## :rocket: Como Visualizar a Análise
-Os scripts de transformação de dados estão localizados na pasta `/analysis`. Eles demonstram a limpeza dos dados brutos localizados em `/data` e a aplicação da lógica de negócio para gerar o ranking final.
+Data transformation scripts are located in the /analysis folder. They demonstrate the cleaning of raw data found in /data and the application of business logic to generate the final ranking.
 
 ## :chart_with_upwards_trend: Conclusões de Negócio
-Através deste modelo, é possível identificar não apenas as empresas com melhor performance hoje, mas quais setores apresentam maior risco de governança ou gaps de diversidade, permitindo uma análise preditiva de conformidade regulatória.
+Through this model, it is possible to identify not only the top performers but also which sectors present higher governance risks or diversity gaps, enabling predictive analysis of regulatory compliance.
 
 ## :chart_with_upwards_trend: Resultados do Modelo
-Após rodar a lógica de Analytics Engineering (SQL), o ranking final das empresas foi consolidado. 
+After executing the Analytics Engineering logic (SQL), the final company ranking was consolidated.
 
-**Análise dos Resultados:**
-* **Natura & Magalu:** Lideram o ranking devido às baixas emissões operacionais (Escopo 1 e 2) em relação ao seu tamanho, somado a indicadores de governança sólidos.
-* **Vale & Ambev:** Apresentam scores intermediários, refletindo os desafios ambientais de setores de indústria pesada e mineração.
-* **Petrobras:** Possui o score mais baixo devido ao alto volume absoluto de emissões (47M tCO2), o que impacta o pilar ambiental (E) no modelo de normalização atual.
+**Analysis of Results::**
+* **Natura & Magalu:** Lead the ranking due to low operational emissions (Scope 1 and 2) relative to their size, combined with solid governance indicators.
+* **Vale & Ambev:** Show intermediate scores, reflecting the environmental challenges inherent in heavy industry and mining sectors.
+* **Petrobras:** Holds the lowest score due to a high absolute volume of emissions (47M $tCO_2$), which heavily impacts the Environmental (E) pillar in the current normalization model.
 
-> *Nota: Os pesos utilizados foram 40% Ambiental, 30% Social e 30% Governança.*
+> *Note: The weights used were 40% Environmental, 30% Social, and 30% Governance.*
 
 ![Resultado BigQuery](results-scoring-model.png)
+
+
