@@ -26,7 +26,7 @@ Through this model, it is possible to identify not only the top performers but a
 ## :chart_with_upwards_trend: Model Results
 After executing the Analytics Engineering logic (SQL), the final company ranking was consolidated.
 
-**Analysis of Results::**
+**Analysis of Results:**
 * **Natura & Magalu:** Lead the ranking due to low operational emissions (Scope 1 and 2) relative to their size, combined with solid governance indicators.
 * **Vale & Ambev:** Show intermediate scores, reflecting the environmental challenges inherent in heavy industry and mining sectors.
 * **Petrobras:** Holds the lowest score due to a high absolute volume of emissions (47M $tCO_2$), which heavily impacts the Environmental (E) pillar in the current normalization model.
