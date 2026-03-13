@@ -32,3 +32,5 @@ Após rodar a lógica de Analytics Engineering (SQL), o ranking final das empres
 * **Petrobras:** Possui o score mais baixo devido ao alto volume absoluto de emissões (47M tCO2), o que impacta o pilar ambiental (E) no modelo de normalização atual.
 
 > *Nota: Os pesos utilizados foram 40% Ambiental, 30% Social e 30% Governança.*
+
+![Resultado BigQuery](results-scoring-model.png)
