@@ -22,3 +22,13 @@ Os scripts de transformação de dados estão localizados na pasta `/analysis`. 
 
 ## :chart_with_upwards_trend: Conclusões de Negócio
 Através deste modelo, é possível identificar não apenas as empresas com melhor performance hoje, mas quais setores apresentam maior risco de governança ou gaps de diversidade, permitindo uma análise preditiva de conformidade regulatória.
+
+## :chart_with_upwards_trend: Resultados do Modelo
+Após rodar a lógica de Analytics Engineering (SQL), o ranking final das empresas foi consolidado. 
+
+**Análise dos Resultados:**
+* **Natura & Magalu:** Lideram o ranking devido às baixas emissões operacionais (Escopo 1 e 2) em relação ao seu tamanho, somado a indicadores de governança sólidos.
+* **Vale & Ambev:** Apresentam scores intermediários, refletindo os desafios ambientais de setores de indústria pesada e mineração.
+* **Petrobras:** Possui o score mais baixo devido ao alto volume absoluto de emissões (47M tCO2), o que impacta o pilar ambiental (E) no modelo de normalização atual.
+
+> *Nota: Os pesos utilizados foram 40% Ambiental, 30% Social e 30% Governança.*
